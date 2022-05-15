@@ -1,0 +1,334 @@
+JSON
+ 4. Создать внешний репозиторий c названием JSON.
+ 5. Клонировать репозиторий JSON на локальный компьютер.
+git clone https://github.com/AlesiaFonarikova/JSON.git
+ 6. Внутри локального JSON создать файл “new.json”.
+touch new.json
+ 7. Добавить файл под гит.
+git add new.json
+ 8. Закоммитить файл.
+git commit -m "Empty JSON-file"
+ 9. Отправить файл на внешний GitHub репозиторий.
+git push
+ 10. Отредактировать содержание файла “new.json” - написать информацию о себе (ФИО, возраст, количество домашних животных, будущая желаемая зарплата). Всё написать в формате JSON.
+vim new.json
+(i - для редактирования)
+
+{
+	"Full name":{
+		"Surname":"Фонарикова","Name":"Алеся","Patronymic":"Александровна"},
+	"Age":23,
+	"Pet":{
+		"Amount":1,"Animal":"Собака","Name":"Злата","Age":6},
+	"Preferred salary":500
+}
+
+(:wq - сохранить и выйти)
+ 11. Отправить изменения на внешний репозиторий.
+git commit -am "new.json changes"
+git push
+ 12. Создать файл preferences.json
+touch preferences.json
+ 13. В файл preferences.json добавить информацию о своих предпочтениях (Любимый фильм, любимый сериал, любимая еда, любимое время года, сторона которую хотели бы посетить) в формате JSON.
+vim preferences.json
+(i - для редактирования)
+
+{
+	"My preferences":{
+		"Favorite movie":"По соображениям совести",
+		"Favorite show":"Бумажный дом",
+		"Favorite food":"Карбонара",
+		"Favorite season":"Зима",
+		"The country I want to visit":"Новая Зеландия"}
+}
+
+(:wq - сохранить и выйти)
+ 14. Создать файл skills.json добавить информацию о скиллах которые будут изучены на курсе в формате JSON
+vim skills.json
+(i - для редактирования)
+
+{
+	"Skills I will get":["Базовая теория","Клиент-серверная архитектура","JSON,XML","Тестирование API","DevTools","VPN","Мобильное тестирование","Перехват трафика","terminal LINUX","SQL","Postgres","Redis","Нагрузочное тестирование в Jmeter","SCRUM","Основы Python"]
+}
+
+(:wq - сохранить и выйти)
+ 15. Отправить сразу 2 файла на внешний репозиторий.
+git add preferences.json skills.json
+git commit -m "Add 2 new files"
+git push
+ 16. На веб интерфейсе создать файл Bug_report.json.
+Add file - create new file - Bug_report.json
+ 17. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+"Create bug-report file" - commit new file
+ 18. На веб интерфейсе модифицировать файл bug_report.json, добавить баг репорт в формате JSON.
+Edit this file
+
+{
+  "New bug report":{
+    "Bug ID":34,
+    "Bug title":"Приложение вылетает при нажатии на кнопку 'Сохранить'",
+    "Build":"Version 5.0.3",
+    "Environment":"Windows 11, Google Chrome 99.0.4844.84",
+    "Steps to reproduce":["1.Зайти на сайт diffiles.com","2.Заполнить поля валидными данными:'Имя файла':new,'Дата создания':10.01.2021","3.Загрузить любой файл до 50 MB в поле 'Прикрепить файл'","4.Нажать кнопку 'Сохранить'"],
+    "Expected result":"Файл успешно загружается и сохраняется",
+    "Actual result":"Приложение вылетает при нажатии на кнопку 'Сохранить'",
+    "Severity":"Блокирующий",
+    "Priority":"Высокий",
+    "Assigned to":"Арсений П.",
+    "Reported by":"Алеся Ф.",
+    "Reported on":"13-04-2022",
+    "Status":"Новый"}
+}
+ 19. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+"New bug was listed in Bug_report.json" - commit changes
+ 20. Синхронизировать внешний и локальный репозиторий JSON
+git pull
+
+
+
+
+
+
+
+XML
+ 21. Создать внешний репозиторий c названием XML.
+ 22. Клонировать репозиторий XML на локальный компьютер.
+git clone https://github.com/AlesiaFonarikova/XML.git
+ 23. Внутри локального XML создать файл “new.xml”.
+touch new.xml
+ 24. Добавить файл под гит.
+git add new.xml
+ 25. Закоммитить файл.
+git commit -m "Empty XML-file"
+ 26. Отправить файл на внешний GitHub репозиторий.
+git push
+ 27. Отредактировать содержание файла “new.xml” - написать информацию о себе (ФИО, возраст, количество домашних животных, будущая желаемая зарплата). Всё написать в формате XML.
+vim new.xml
+(i - для редактирования)
+
+<?xml version="1.0"?>
+<Personality>
+    <Full_name>
+        <Surname>Фонарикова</Surname>
+        <Name>Алеся</Name>
+        <Patronymic>Александровна</Patronymic>
+    </Full_name>
+    <Age>23</Age>
+    <Pet>
+        <Amount>1</Amount>
+        <Animal>Собака</Animal>
+        <Name>Злата</Name>
+        <Age>6</Age>
+    </Pet>
+    <Preferred_salary>500</Preferred_salary>
+</Personality>
+
+(:wq - сохранить и выйти)
+ 28. Отправить изменения на внешний репозиторий.
+git commit -am "new.xml changes"
+git push
+ 29. Создать файл preferences.xml
+touch preferemces.xml
+ 30. В файл preferences.xml добавить информацию о своих предпочтениях (Любимый фильм, любимый сериал, любимая еда, любимое время года, сторона которую хотели бы посетить) в формате XML.
+vim preferences.xml
+(i - для редактирования)
+
+<?xml version="1.0"?>
+<My_preferences>
+    <Favorite_movie>По соображениям совести</Favorite_movie>
+    <Favorite_show>Бумажный дом</Favorite_show>
+    <Favorite_food>Карбонара</Favorite_food>
+    <Favorite_season>Зима</Favorite_season>
+    <The_country_I_want_to_visit>Новая Зеландия</The_country_I_want_to_visit>
+</My_preferences>
+
+(:wq - сохранить и выйти)
+ 31. Создать файл skills.xml добавить информацию о скиллах которые будут изучены на курсе в формате XML
+vim skills.xml
+(i - для редактирования)
+
+<?xml version="1.0"?>
+<Skills_I_will_get>
+    Базовая теория
+    Клиент-серверная архитектура
+    JSON,XML
+    Тестирование API
+    DevTools
+    VPN
+    Мобильное тестирование
+    Перехват трафика
+    terminal LINUX
+    SQL
+    Postgres
+    Redis
+    Нагрузочное тестирование в Jmeter
+    SCRUM
+    Основы Python
+</Skills_I_will_get>
+
+(:wq - сохранить и выйти)
+ 32. Сделать коммит в одну строку.
+git add preferences.xml skills.xml
+git commit -m "Add 2 new files"
+ 33. Отправить сразу 2 файла на внешний репозиторий.
+git push
+ 34. На веб интерфейсе создать файл bug_report.xml.
+Add file - create new file - Bug_report.xml
+ 35. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+"Create bug-report file" - commit new file
+ 36. На веб интерфейсе модифицировать файл bug_report.xml, добавить баг репорт в формате XML.
+Edit this file
+
+<?xml version="1.0"?>
+<New_bug_report>
+    <Bug_ID>34</Bug_ID>
+    <Bug_title>Приложение вылетает при нажатии на кнопку 'Сохранить'</Bug_title>
+    <Build>Version 5.0.3</Build>
+    <Environment>Windows 11, Google Chrome 99.0.4844.84</Environment>
+    <Steps_to_reproduce>
+        1.Зайти на сайт diffiles.com
+        2.Заполнить поля валидными данными:'Имя файла':new,'Дата создания':10.01.2021
+        3.Загрузить любой файл до 50 MB в поле 'Прикрепить файл'
+        4.Нажать кнопку 'Сохранить'
+    </Steps_to_reproduce>
+    <Expected_result>Файл успешно загружается и сохраняется</Expected_result>
+    <Actual_result>Приложение вылетает при нажатии на кнопку 'Сохранить'</Actual_result>
+    <Severity>Блокирующий</Severity>
+    <Priority>Высокий</Priority>
+    <Assigned_to>Арсений П.</Assigned_to>
+    <Reported_by>Алеся Ф.</Reported_by>
+    <Reported_on>13-04-2022</Reported_on>
+    <Status>Новый</Status>
+</New_bug_report>
+ 37. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+"New bug was listed in Bug_report.xml" - commit changes
+ 38. Синхронизировать внешний и локальный репозиторий XML
+git pull
+
+
+
+
+
+
+
+TXT
+ 1. Создать внешний репозиторий c названием TXT.
+ 2. Клонировать репозиторий TXT на локальный компьютер.
+git clone https://github.com/AlesiaFonarikova/TXT.git
+ 3. Внутри локального TXT создать файл “new.txt”.
+touch new.txt
+ 4. Добавить файл под гит.
+git add new.txt
+ 5. Закоммитить файл.
+git commit -m "Empty TXT-file"
+ 6. Отправить файл на внешний GitHub репозиторий.
+git push
+ 7. Отредактировать содержание файла “new.txt” - написать информацию о себе (ФИО, возраст, количество домашних животных, будущая желаемая зарплата). Всё написать в формате TXT.
+vim new.txt
+(i - для редактирования)
+
+Name: Фонарикова Алеся Александровна
+Age: 23
+Pets: Собака(Английский кокер-спаниель)
+Salary: 500$
+
+(:wq - сохранить и выйти)
+ 8. Отправить изменения на внешний репозиторий.
+git commit -am "new.txt changes"
+git push
+ 9. Создать файл preferences.txt
+touch preferences.txt
+ 10. В файл preferences.txt” добавить информацию о своих предпочтениях (Любимый фильм, любимый сериал, любимая еда, любимое время года, сторона которую хотели бы посетить) в формате TXT.
+vim preferences.txt
+(i - для редактирования)
+
+Любимый фильм: "По ссображениям совести"
+Любимый сериал: "Бумажный дом"
+Любимая еда: паста "Карбонара"
+Любимое время года: зима
+Страна, которую хотела бы посетить: Новая Зеландия
+
+(:wq - сохранить и выйти)
+ 11. Создать файл skills.txt добавить информацию о скиллах которые будут изучены на курсе в формате TXT
+vim skills.txt
+(i - для редактирования)
+
+1. Базовая теория.
+2. Клиент-серверная архитектура.
+3. HTTP Методы запросов на сервер.
+4. Коды ответов HTTP сервера.
+5. Структуры HTTP запросов и ответов.
+6. Что такое JSON, XML. Их структура.
+7. Тестирование API через Postman (JS, автотесты API).
+8. Снятие и чтение логов c внешнего сервера.
+9. Снифинг http web трафика через Charles и Fiddler.
+10. Dev Tools веб браузеров (Google Chrome, FireFox).
+11. VPN. 
+12. Мобильное тестирование.
+13. Особенность iOS, Android, гайдлайны.
+14. Сборка iOS приложений на XCode.
+15. Сборка Android приложений на Android Studio.
+16. ADB.
+17. Настройка прокси и vpn на iOS и Android.
+18. Перехват (сниффинг) мобильного трафика через Charles и Fiddler на iOS и Android.
+19. Командная строка (terminal) Linux.
+20. Основы bash-скриптинга, автоматизация рутинных задач на сервере.
+21. Доступ к удалённым серверам.
+22. Основы SQL.
+23. База данных Postgres.
+24. Нереляционная база данных Redis.
+25. Нагрузочное тестирование в Jmeter.
+26. Методология разработки Scrum.
+27. Python.
+
+(:wq - сохранить и выйти)
+ 12. Сделать коммит в одну строку.
+git add preferences.xml skills.xml
+git commit -m "Add 2 new files"
+ 13. Отправить сразу 2 файла на внешний репозиторий.
+git push
+ 14. На веб интерфейсе создать файл Bug_report.txt.
+Add file - create new file - Bug_report.txt
+ 15. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+"Create bug-report file" - commit new file
+ 16. На веб интерфейсе модифицировать файл bug_report.txt, добавить баг репорт в формате TXT.
+Edit this file
+
+Bug ID: 34
+Bug title: Приложение вылетает при нажатии на кнопку 'Сохранить'
+Build: Version 5.0.3
+Environment: Windows 11, Google Chrome 99.0.4844.84
+Steps to reproduce:
+  1.Зайти на сайт diffiles.com
+  2.Заполнить поля валидными данными:'Имя файла':new,'Дата создания':10.01.2021
+  3.Загрузить любой файл до 50 MB в поле 'Прикрепить файл'
+  4.Нажать кнопку 'Сохранить'
+Expected result: Файл успешно загружается и сохраняется
+Actual result: Приложение вылетает при нажатии на кнопку 'Сохранить'
+Severity: Блокирующий
+Priority: Высокий
+Assigned to: Арсений П.
+Reported by: Алеся Ф.
+Reported on: 13-04-2022
+Status: Новый
+ 17. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+"New bug was listed in Bug_report.txt" - commit changes
+ 18. Синхронизировать внешний и локальный репозиторий TXT
+git pull
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
